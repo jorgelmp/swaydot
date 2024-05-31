@@ -1,9 +1,9 @@
 local lspconfig = require('lspconfig')
 
-lspconfig.marksman.setup {}
-lspconfig.jdtls.setup { 
-    settings = { java = { signatureHelp = { enabled = true }, }, }
-}
+--lspconfig.marksman.setup {}
+--lspconfig.jdtls.setup { 
+--    settings = { java = { signatureHelp = { enabled = true }, }, }
+--}
 
 vim.api.nvim_create_autocmd('LspAttach', {
   group = vim.api.nvim_create_augroup('UserLspConfig', {}),
